@@ -1,0 +1,50 @@
+//  Copyright (C) 2000-2005 ABplus kazhida.
+//  All rights reserved.
+//  $Id: ABComponents.dpk 703 2007-11-18 08:17:43Z kazhida $
+//  $Author: kazhida $
+//
+package ABComponents;
+
+{$R *.res}
+{$R 'ABIconUpDown.dcr'}
+{$R 'ABSpeedButton.dcr'}
+{$R 'ABCtrls.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ABplus SpecialComponents'}
+{$IMPLICITBUILD OFF}
+{$DEFINE RELEASE}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  ABSpeedButton in 'ABSpeedButton.pas',
+  ABCtrls in 'ABCtrls.pas',
+  ABIconUpDown in 'ABIconUpDown.pas',
+  ABUtils in 'ABUtils.pas',
+  ABEzProtect in 'ABEzProtect.pas',
+  ABGrids in 'ABGrids.pas',
+  ABSticky in 'ABSticky.pas';
+
+end.
